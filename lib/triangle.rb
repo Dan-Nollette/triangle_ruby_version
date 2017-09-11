@@ -10,7 +10,7 @@ class Triangle
     if(@side1.eql?(@side2) && @side2.eql?(@side3))
       return "equilateral"
     elsif(@side1 >= @side2 + @side3 || @side2 >= @side1 + @side3 || @side3 >= @side1 + @side2)
-      return "not a triangle"
+      return "non-triangle"
     elsif (@side1.eql?(@side2) || @side3.eql?(@side2) || @side1.eql?(@side3))
       return "isosceles"
     else

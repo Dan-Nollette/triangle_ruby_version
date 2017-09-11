@@ -19,4 +19,8 @@ describe('triangle#triangleType')do
   test_triangle = Triangle.new(3,4,2)
     expect(test_triangle.triangleType()).to(eq("scalene"))
   end
+  it("will check for if input is a scalene")do
+  test_triangle = Triangle.new(5,4,3)
+    expect(test_triangle.triangleType()).to(eq("scalene"))
+  end
 end
